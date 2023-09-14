@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B36A1A892AB32E4E0076ABE5 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36A1A882AB32E4E0076ABE5 /* EndPointType.swift */; };
 		B39D90612AB1A7C900570391 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D90602AB1A7C900570391 /* AppDelegate.swift */; };
 		B39D90632AB1A7C900570391 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D90622AB1A7C900570391 /* SceneDelegate.swift */; };
 		B39D90682AB1A7C900570391 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B39D90662AB1A7C900570391 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B36A1A882AB32E4E0076ABE5 /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
 		B39D905D2AB1A7C900570391 /* MVVM_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39D90602AB1A7C900570391 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B39D90622AB1A7C900570391 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B36A1A872AB32E260076ABE5 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B36A1A882AB32E4E0076ABE5 /* EndPointType.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		B39D90542AB1A7C900570391 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +87,7 @@
 				B39D90792AB1A84A00570391 /* Application */,
 				B39D90782AB1A84600570391 /* Extension */,
 				B39D90772AB1A84200570391 /* Constant */,
+				B36A1A872AB32E260076ABE5 /* Utility */,
 				B39D90762AB1A83F00570391 /* Helper */,
 				B39D907A2AB1A89000570391 /* Screens */,
 				B39D90752AB1A83B00570391 /* Storyboard */,
@@ -280,6 +291,7 @@
 				B39D90882AB217E100570391 /* ProductListViewController.swift in Sources */,
 				B39D90842AB1E8BD00570391 /* Constant.swift in Sources */,
 				B3E869632AB2FA7700438960 /* UIImageView + Extension.swift in Sources */,
+				B36A1A892AB32E4E0076ABE5 /* EndPointType.swift in Sources */,
 				B39D90862AB2138E00570391 /* CustomError + Extension.swift in Sources */,
 				B39D90632AB1A7C900570391 /* SceneDelegate.swift in Sources */,
 				B3E8695D2AB2CA4600438960 /* ProductCell.swift in Sources */,
