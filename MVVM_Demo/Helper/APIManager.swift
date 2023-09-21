@@ -19,15 +19,29 @@ final class APIManager{
         
     }
     
-    func request<T:Decodable>(modelType:T.Type,type:EndPointType,handler:@escaping Handler<T>){
+    func request<T:Codable>(modelType:T.Type,type:EndPointType,handler:@escaping Handler<T>){
         
                 // get url
         guard let url = type.url else {
                     handler(.failure(.invalidURL))
                     return
                 }
+        
+        // request Add
+        var request = URLRequest(url:url)
+        // method
+        request.httpMethod = type.method.rawValue
+        // body
+        if let parameters = type.body{
+            request.httpBody = try? JSONEncoder().encode(parameters)
+        }
+        
+        
+        // headers
+        request.allHTTPHeaderFields = type.headers
+        
                 // Networking calling
-                URLSession.shared.dataTask(with: url) { data, resposne, error in
+                URLSession.shared.dataTask(with: request) { data, resposne, error in
                     // check data
                     guard let data, error == nil else {
                         handler(.failure(.invalidData))
@@ -53,6 +67,12 @@ final class APIManager{
         
                 }.resume()
         
+    }
+    
+    static var commonHeaders : [String:String] {
+        return [
+            "Content-Type": "application/json"
+        ]
     }
     
     

@@ -19,6 +19,9 @@
 		B39D90862AB2138E00570391 /* CustomError + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D90852AB2138E00570391 /* CustomError + Extension.swift */; };
 		B39D90882AB217E100570391 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D90872AB217E100570391 /* ProductListViewController.swift */; };
 		B39D908A2AB219C400570391 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39D90892AB219C400570391 /* ProductViewModel.swift */; };
+		B3A719B02ABC46A800547DDB /* AddProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A719AF2ABC46A800547DDB /* AddProduct.swift */; };
+		B3A719B22ABC486300547DDB /* ProductEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A719B12ABC486300547DDB /* ProductEndPoint.swift */; };
+		B3CC65BA2AB423DD00FBA31D /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CC65B92AB423DD00FBA31D /* AddProductViewController.swift */; };
 		B3E8695D2AB2CA4600438960 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E8695B2AB2CA4600438960 /* ProductCell.swift */; };
 		B3E8695E2AB2CA4600438960 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3E8695C2AB2CA4600438960 /* ProductCell.xib */; };
 		B3E869612AB2FA3100438960 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B3E869602AB2FA3100438960 /* Kingfisher */; };
@@ -40,6 +43,9 @@
 		B39D90852AB2138E00570391 /* CustomError + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomError + Extension.swift"; sourceTree = "<group>"; };
 		B39D90872AB217E100570391 /* ProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		B39D90892AB219C400570391 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		B3A719AF2ABC46A800547DDB /* AddProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProduct.swift; sourceTree = "<group>"; };
+		B3A719B12ABC486300547DDB /* ProductEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEndPoint.swift; sourceTree = "<group>"; };
+		B3CC65B92AB423DD00FBA31D /* AddProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
 		B3E8695B2AB2CA4600438960 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		B3E8695C2AB2CA4600438960 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
 		B3E869622AB2FA7700438960 /* UIImageView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extension.swift"; sourceTree = "<group>"; };
@@ -61,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				B36A1A882AB32E4E0076ABE5 /* EndPointType.swift */,
+				B3A719B12ABC486300547DDB /* ProductEndPoint.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -177,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				B39D907F2AB1A94B00570391 /* Product.swift */,
+				B3A719AF2ABC46A800547DDB /* AddProduct.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -195,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				B39D90872AB217E100570391 /* ProductListViewController.swift */,
+				B3CC65B92AB423DD00FBA31D /* AddProductViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -288,12 +297,15 @@
 			files = (
 				B39D90822AB1E51C00570391 /* APIManager.swift in Sources */,
 				B39D90612AB1A7C900570391 /* AppDelegate.swift in Sources */,
+				B3A719B22ABC486300547DDB /* ProductEndPoint.swift in Sources */,
+				B3CC65BA2AB423DD00FBA31D /* AddProductViewController.swift in Sources */,
 				B39D90882AB217E100570391 /* ProductListViewController.swift in Sources */,
 				B39D90842AB1E8BD00570391 /* Constant.swift in Sources */,
 				B3E869632AB2FA7700438960 /* UIImageView + Extension.swift in Sources */,
 				B36A1A892AB32E4E0076ABE5 /* EndPointType.swift in Sources */,
 				B39D90862AB2138E00570391 /* CustomError + Extension.swift in Sources */,
 				B39D90632AB1A7C900570391 /* SceneDelegate.swift in Sources */,
+				B3A719B02ABC46A800547DDB /* AddProduct.swift in Sources */,
 				B3E8695D2AB2CA4600438960 /* ProductCell.swift in Sources */,
 				B39D908A2AB219C400570391 /* ProductViewModel.swift in Sources */,
 				B39D90802AB1A94B00570391 /* Product.swift in Sources */,

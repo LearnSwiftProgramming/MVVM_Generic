@@ -20,6 +20,13 @@ class ProductListViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    @IBAction func addProduct(_ sender: UIBarButtonItem) {
+        let product = AddProduct(title: "iPhone")
+        viewModel.addProduct(parameters: product)
+        
+    }
+    
 
 }
 
@@ -30,6 +37,9 @@ extension ProductListViewController{
         initViewModel()
         observeEvent()
     }
+    
+    
+    
     func initViewModel(){
         viewModel.fetchProducts()
     }
@@ -54,6 +64,8 @@ extension ProductListViewController{
                 }
                 case .error(let error):
                 print(error)
+            case .newProductAdd(product: let newProduct):
+                print(newProduct)
             }
             
         }
