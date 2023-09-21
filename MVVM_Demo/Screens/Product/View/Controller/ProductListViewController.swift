@@ -7,18 +7,22 @@
 
 import UIKit
 
+
 class ProductListViewController: UIViewController {
     @IBOutlet weak var productTableView :UITableView!
+    
     
     private var viewModel = ProductViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         configuration()
 
        
         // Do any additional setup after loading the view.
     }
+    
     
     
     @IBAction func addProduct(_ sender: UIBarButtonItem) {
